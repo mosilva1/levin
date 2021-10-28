@@ -62,3 +62,22 @@ footer{
     height: 40px;
     margin: 7px 20px;
 }
+.logo-footer{
+    width: 180px;
+    height: 70px;
+    margin: 30px 20px;
+    align-items: center;
+}
+.conteiner3{
+    display: grid;
+    grid-template-columns: 200px 400px 300px auto;
+    grid-template-rows: 130px auto;
+}
+.bloco1-footer{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Roboto-Medium', sans-serif;
+}
