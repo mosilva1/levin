@@ -134,3 +134,120 @@ footer {
 /* estilização: cabeçalho, rodapé, fonte.
 NÃO MEXER
 */
+.box{
+  display: grid;
+  grid-template-columns: 500px auto 500px;
+  grid-template-rows: 300px 300px 100px;
+  justify-content: center;
+}
+.destaque{
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  margin: 50px;
+  width: 65%;
+}
+.destaque-img {
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+}
+.destaque1-img {
+  width: 600px;
+  height: 450px;
+  justify-content: flex-start;
+  margin: 100px;
+}
+.destaque2-img {
+  width: 400px;
+  height: 250px;
+  justify-content: flex-start;
+  margin: 100px;
+}
+.destaque p{
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  color: #232223;
+  width: 90%;
+  text-align: justify;
+  padding: 15px;
+}
+.destaque button{
+  margin: 0 auto;
+
+}
+.destaque button:hover{
+  font-weight: bold;
+}
+h2{
+  font-family: 'Roboto-Medium', sans-serif;
+  font-size: large;
+  margin: 30px;
+  padding: 5px;
+  text-align: justify;
+}
+button{
+  background-color: #4f1128;
+  color: #ffffff;
+  width:120px;
+  height:30px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  font-size: medium;
+  font-family: 'Roboto-Medium', sans-serif;
+  align-items: justify;
+  float: left;
+}
+.box-left{
+  display: inline;
+  float: left;  
+  width: 80%;
+}
+.box-right{
+  display: grid;
+  grid-template-columns: 715px auto;
+  grid-template-rows: 800px auto;
+  float: right;
+}
+.banner-publicidade img{
+width: 100%;
+height: 350px;
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  margin: 30px 100px 10px;
+  color: #4f1128;
+  font-size: x-large;
+}
+h4{
+  font-family: 'Roboto', sans-serif;
+  margin: 100px;
+  color: #1d1d1b;
+  font-size: larger;
+  width: 40%;
+}
+.box-left a{
+  color: #4f1128;
+  font-weight: bold;
+  margin: 100px;
+  width: 40%;
+}
+.box-left a:hover{
+  border-bottom:3px solid #4f1128;
+}
+.box-left p{
+  font-family: 'Roboto', sans-serif;
+  margin: 100px;
+  color: #232223;
+  width: 40%;
+  text-align: justify;
+  padding: 15px;
+}
+.destaque1 button{
+  margin: 0 auto;
+
+}
+.destaque1 button:hover{
+  font-weight: bold;
+}
