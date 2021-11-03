@@ -1,133 +1,136 @@
-html, body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+:root {
+  --primary: #4f1128;
+  --primary-dark: #350c1d;
+  --dark-gray: #353334;
+  --light-gray: rgb(230, 219, 219);
+  --white: #f4f4f4;
 }
-h1{
-    font-family: 'Roboto-Medium', sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-p{
-    font-family: 'Roboto', sans-serif;
+h1 {
+  font-family: "Roboto-Medium", sans-serif;
 }
-a{
-    text-decoration: none;
+p {
+  font-family: "Roboto", sans-serif;
 }
-.conteiner{
-    display: grid;
-    grid-template-columns: 200px auto 200px;
-    grid-template-rows: 150px auto 260px;
+a {
+  text-decoration: none;
 }
-header{
-    background-color: #4f1128;
-    grid-column: 1/4;
-    grid-row: 1/2;
+.conteiner {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 150px auto 260px;
 }
-main{
-    background-color: rgb(230, 219, 219);
-    grid-column: 1/4;
-    grid-row: 2/3;
+header {
+  background-color: var(--primary);
+  grid-column: 1/4;
+  grid-row: 1/2;
 }
-footer{
-    background-color: #353334;
-    grid-column: 1/4;
-    grid-row: 3/4;
+main {
+  background-color: var(--light-gray);
+  grid-column: 1/4;
+  grid-row: 2/3;
 }
-.header{
-    background-color: #4f1128;
-    display: grid;
-    grid-template-columns: 220px auto 100px;
+footer {
+  background-color: var(--dark-gray);
+  grid-column: 1/4;
+  grid-row: 3/4;
 }
-.logo{
-    width: 180px;
-    height: 70px;
-    margin: 5px 20px;
-    align-items: center;
+.header {
+  background-color: var(--primary);
+  display: grid;
+  grid-template-columns: 220px auto 100px;
 }
-.barramenu img{
-    width: 40px;
-    height: 40px;
-    margin: 7px 20px;
+.logo {
+  width: 180px;
+  height: 70px;
+  margin: 5px 20px;
+  align-items: center;
 }
-.barramenu{
-    grid-column: 1/4;
-    background-color: #350c1d;
-    display: grid;
-    display: inline-block;
+.barramenu img {
+  width: 40px;
+  height: 40px;
+  margin: 7px 20px;
 }
-.menu{
-    display: flex; 
-    justify-content: center;
-    grid-column: 1/4;
-    
+.barramenu {
+  grid-column: 1/4;
+  background-color: var(--primary-dark);
+  display: grid;
+  display: inline-block;
 }
-.login{
-    grid-column: 3/4;
-    display: flex;
-    float: right;
-    align-items: center;
+.menu {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/4;
 }
-.conta{
-    width: 40px;
-    height: 40px;
-    margin: 7px 20px;
+.login {
+  grid-column: 3/4;
+  display: flex;
+  float: right;
+  align-items: center;
 }
-.icone:hover{
-    border-bottom: 3px solid white;
+.conta {
+  width: 40px;
+  height: 40px;
+  margin: 7px 20px;
 }
-.logo-footer{
-    width: 190px;
-    height: 80px;
-    margin: 30px 45px;
-    align-items: center;
+.icone:hover {
+  border-bottom: 3px solid white;
 }
-.conteiner3{
-    display: grid;
-    grid-template-columns: 260px auto 600px;
-    grid-template-rows: 120px 130px;
+.logo-footer {
+  width: 190px;
+  height: 80px;
+  margin: 30px 45px;
+  align-items: center;
 }
-.titulo-footer{
-    grid-column: 2/3;
-    grid-row: 2/2;
-    font-family: 'Roboto-Medium', sans-serif;
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
+.conteiner3 {
+  display: grid;
+  grid-template-columns: 260px auto 600px;
+  grid-template-rows: 120px 130px;
 }
-.bloco1-footer{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+.titulo-footer {
+  grid-column: 2/3;
+  grid-row: 2/2;
+  font-family: "Roboto-Medium", sans-serif;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
 }
-.rotulos-footer{
-    color: white;
+.bloco1-footer {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
-.rotulos-footer:hover{
-    font-weight: bold;
+.rotulos-footer {
+  color: white;
 }
-.bloco2-footer{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+.rotulos-footer:hover {
+  font-weight: bold;
 }
-.bloco3-footer{
-    grid-column: 4/4;
-    grid-row: 2/3;
-    margin: 17.5px 30px;
+.bloco2-footer {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
-.bloco3-footer img{
-    width: 40px;
-    height: 40px;
-    padding: 6px;
+.bloco3-footer {
+  grid-column: 4/4;
+  grid-row: 2/3;
+  margin: 17.5px 30px;
 }
-.banner img{
-    width: 100%;   
-}   
+.bloco3-footer img {
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+}
+.banner img {
+  width: 100%;
+}
 /* estilização: cabeçalho, rodapé, fonte.
 NÃO MEXER
 */
-
-
-
-

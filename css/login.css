@@ -1,0 +1,49 @@
+form {
+  width: 400px;
+  margin: 32px auto;
+  padding-top: 40px;
+  background-color: var(--primary);
+  padding: 30px;
+  border-radius: 32px;
+  color: var(--white);
+}
+form .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form .header img {
+  width: 76px;
+}
+form .header h2 {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+form .card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+form .card-group input[type="email"],
+form .card-group input[type="password"] {
+  border-radius: 24px;
+  width: 100%;
+  padding: 4px 16px;
+  box-sizing: border-box;
+}
+form .card-group a {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: var(--white);
+  text-decoration: none;
+}
+form .card-group .remember {
+  align-self: flex-start;
+  display: flex;
+}
+form .card-group button {
+  padding: 4px 24px;
+  border-radius: 16px;
+}
