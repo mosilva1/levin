@@ -1,0 +1,46 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 32px auto;
+  padding-top: 40px;
+  background-color: var(--primary);
+  padding: 30px;
+  border-radius: 32px;
+  color: var(--white);
+  align-items: center;
+  gap: 16px;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+form img {
+  width: 76px;
+  filter: invert(100%);
+}
+
+form input:not([type="checkbox"]) {
+  border-radius: 24px;
+  width: 100%;
+  padding: 4px 16px;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 4px 24px;
+  border-radius: 16px;
+  margin-top: 16px;
+}
+form .terms,
+form .offers {
+  align-self: flex-start;
+  display: flex;
+  margin-top: 8px;
+}
+
+form .terms a {
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 18px;
+}
