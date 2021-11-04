@@ -2,8 +2,13 @@
   --primary: #4f1128;
   --primary-dark: #350c1d;
   --dark-gray: #353334;
-  --light-gray: rgb(230, 219, 219);
+  --light-gray: #e6dbdb;
   --white: #f4f4f4;
+  --black-title: #1d1d1d;
+  --black-conteudo: #232223;
+  --yellow: #eacd3b;
+  --error: #b51f06;
+  --success: #87b221;
 }
 html, body {
   margin: 0;
