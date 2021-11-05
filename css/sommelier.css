@@ -62,7 +62,6 @@
   color: var(--primary-dark);
   padding: 10px;
 }
-
 .box-botton{
   grid-column: 1/4;
   grid-row: 4/5;
@@ -90,7 +89,6 @@
   grid-column: 2/3;
   grid-row: 3/4;
   padding: 50px 193px;
-
 }
 .button{
   background-color: var(--primary-dark);
@@ -103,22 +101,3 @@
 .button:hover{
   font-weight: bold;
 }
-/*
-  .destaque1 button{
-    margin: 0 auto;
-  }
-  .destaque1 button:hover{
-    font-weight: bold;
-  }
-  .destaque1-img {
-    width: 600px;
-    height: 500px;
-  }
-  .destaque2-img {
-    width: 400px;
-    height: 250px;
-    justify-content: flex-start;
-    margin: 100px;
-  }
-  */
-
