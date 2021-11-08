@@ -1,0 +1,48 @@
+.card{
+    display: inline-flex;
+    border: solid var(--primary) ;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px 0 10px 0 ;
+    background-color: var(--white);
+}
+.conteudo{
+    text-align: center;
+}
+.card1{
+    width: 25%;
+    text-align: left;
+    margin-left: 10px;
+}
+.card1 img{
+    border: solid var(--primary);
+    border-radius: 150px;
+}
+.card2{
+    text-align: left;
+}
+.card2 h3{
+    margin: 0;
+}
+.conteudo2{
+    margin: 30px 100px 10px;
+    color: var(--primary);
+}
+.conteudo2 h2{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.parceria{
+    display: inline-flex;
+    width: 100%;
+    border-bottom: 1px solid var(--dark-gray);
+    margin-bottom: 10px;
+}
+.parceria h5{
+    margin: 0;
+}
+.subparceria{
+    display: inline-flex;
+    margin-right: 82%;
+    text-align: center;
+}

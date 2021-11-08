@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>levin</title>
+    <link rel="stylesheet" href="css/levin.css">
+    <link rel="stylesheet" href="css/lermais.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
+</head>
+<body class="conteiner">
+    <header>
+        <div class="header">
+            <div>
+                <a title="levin" href="levin.html"><img class="logo" src="img/logo1.svg" alt="levin"></a>
+            </div>
+            <div class="login">
+                <a title="Conta" href="login.html"><img class="conta" src="img/perfil-de-usuario.png" alt="login"></a>     
+            </div>
+            <nav class="barramenu">
+                <div class="menu">
+                    <a class="icone" title="Vinhos" href="vinhos.html"><img src="img/icone vinho.png" alt="Vinhos" srcset=""></a>
+                    <a class="icone" title="Top Five" href="topfive.html"><img src="img/trophy negativo.png" alt="topfive" srcset=""></a>
+                    <a class="icone" title="Kits de Vinhos" href="kitsdevinhos.html"><img src="img/icone kit.png" alt="kitsdevinhos" srcset=""></a>
+                    <a class="icone" title="Dicas do Sommelier" href="sommelier.html"><img src="img/icone sommelier.png" alt="sommelier" srcset=""></a>
+                    <a class="icone" title="Enoturismo" href="enoturismo.html"><img src="img/icone enoturismo.png" alt="enoturismo" srcset=""></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h3>Compare os preços dos vinhos</h3>
+        </div>
+        <div class="conteudo">
+            <div  class="card">
+                <div class="card1">
+                    <img src="data:image/png;base64,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" alt="">
+                </div>
+                <div class="card2">
+                    <h3>VINHO A</h3>
+                    <p>ANO</p>
+                    <p>TIPO</p>
+                    <p>UVA</p>
+                    <p>PAÍS</p>
+                    <p>HARMONIZAÇÃO</p>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo2">
+            <div>
+                <h1>Detalhes do produto</h1>
+                <h2>vinho tinto , 750ML</h2>
+            </div>
+            <div class="parceria">
+                <div class="subparceria">
+                    <div>
+                        <img src="" alt="logo">
+                    </div>
+                    <div>
+                        <p>EVINO</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>R$ XXX,XX</h5>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+            <div class="parceria">
+                <div class="subparceria">
+                    <div>
+                        <img src="" alt="logo">
+                    </div>
+                    <div>
+                        <p>EVINO</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>R$ XXX,XX</h5>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+            <div class="parceria">
+                <div class="subparceria">
+                    <div>
+                        <img src="" alt="logo">
+                    </div>
+                    <div>
+                        <p>EVINO</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>R$ XXX,XX</h5>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+            <div class="parceria">
+                <div class="subparceria">
+                    <div>
+                        <img src="" alt="logo">
+                    </div>
+                    <div>
+                        <p>EVINO</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>R$ XXX,XX</h5>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+            <div class="parceria">
+                <div class="subparceria">
+                    <div>
+                        <img src="" alt="logo">
+                    </div>
+                    <div>
+                        <p>EVINO</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>R$ XXX,XX</h5>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="conteiner3">
+        <a href="#"><img class="logo-footer" src="img/logo2.svg" alt="" srcset=""></a>
+        <div class="bloco1-footer">
+            <a class="rotulos-footer" title="Vinhos" href="vinhos.html">Vinhos</a><br>
+            <a class="rotulos-footer" title="Kit Vinhos" href="kitsdevinhos.html">Kits de Vinhos</a><br>
+            <a class="rotulos-footer" title="Top Five" href="topfive.html">Top 5</a><br>
+            <a class="rotulos-footer" title="Sommelier" href="sommelier.html">Dicas do Sommelier</a><br>
+            <a class="rotulos-footer" title="Enoturismo" href="enoturismo.html">Enoturismo</a><br>
+        </div>
+        <div class="bloco2-footer">
+            <a class="rotulos-footer" title="Acessar sua Conta" href="login.html">Acessar sua Conta</a><br>
+            <a class="rotulos-footer" title="Cadastro" href="cadastro.html">Cadastro</a><br>
+            <a class="rotulos-footer" title="Política de Privacidade" href="políticaprivacidade.html">Política de Privacidade</a><br>
+            <a class="rotulos-footer" title="Termos de Uso" href="termosuso.html">Termos de Uso</a><br>
+            <a class="rotulos-footer" title="Central de Ajuda" href="centraldeajuda.html">Central de Ajuda</a><br>        </div>
+        <div class="bloco3-footer">
+            <div class="contato">
+                <a title="Facebook" href="vinhos.html"><img src="img/facebook.png" alt="Facebook" srcset=""></a>
+                <a title="Instagram" href="kitsdevinhos.html"><img src="img/instagram.png" alt="Instagram" srcset=""></a>
+                <a title="E-mail" href="mailto:contato@levin.com.br"><img src="img/email.png" alt="E-mail" srcset=""></a>
+                <a title="WhatsApp" href="sommelier.html"><img src="img/whatsapp.png" alt="WhatsApp" srcset=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.kit1 , .kit2 , .kit3 , .kit4 , .kit5 , .kit6{
+    text-align: center;
+    background-color: #fff;
+    width: 30%;
+    display: inline-block;
+    margin: 4px;
+    padding: 20px 0 20px 0 ;
+    box-shadow: 5px 5px 5px #b3b3b3;
+}
+.kits{
+    text-align: center;
+    padding: 10px 0 10px 0 ;
+}
+.kits , button {
+    float: none;
+}
+.promocao{
+    display: inline-flex;
+}
+.promocao  h4{ 
+    margin: 30px 100px 10px;
+}
+.promocao p{
+    margin: 30px 100px 10px;
+    color: var(--dark-gray);
+}
+.promocao a{
+    margin: 30px 100px 10px;
+    color: var(--black);
+    text-decoration: var(--black) underline;
+}
+.promocao h3{
+    margin: 30px 100px 10px;
+    color: var(--black);
+}
+.promocao img{
+    margin: 30px 100px 10px;
+    width: 30%;
+}
+.promocao button{
+    margin: 30px 100px 10px;
+}
+.promocao2{
+    width: 90%;
+    border-top: 1px var(--dark-gray) solid;
+}
