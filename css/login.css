@@ -46,4 +46,13 @@ form .card-group .remember {
 form .card-group button {
   padding: 4px 24px;
   border-radius: 16px;
+  font-weight: bold;
+  color: var(--primary);
+  transition: background-color 0.12s;
+}
+
+form .card-group button:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+  color: var(--white);
 }

@@ -1,3 +1,16 @@
+:root {
+  --primary: #4f1128;
+  --primary-dark: #350c1d;
+  --dark-gray: #353334;
+  --light-gray: rgb(230, 219, 219);
+  --white: #f4f4f4;
+  --green: #87b221;
+  --red: #b51f06;
+  --yellow: #eacd3b;
+  --black: #232223;
+  --dark: #1d1d1b;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -15,7 +28,7 @@ form {
 }
 
 form img {
-  width: 76px;
+  width: 74px;
   filter: invert(100%);
 }
 
@@ -30,6 +43,9 @@ form button {
   padding: 4px 24px;
   border-radius: 16px;
   margin-top: 16px;
+  font-weight: bold;
+  color: var(--primary-dark);
+  transition: background-color 0.12s;
 }
 form .terms,
 form .offers {
@@ -42,5 +58,25 @@ form .terms a {
   color: var(--white);
   font-weight: bold;
   text-decoration: underline;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+form p a {
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+form .terms a:hover {
+  font-weight: bolder;
+}
+
+form p a:hover {
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
 }
