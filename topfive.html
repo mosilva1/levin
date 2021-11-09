@@ -7,6 +7,11 @@
     <title>levin</title>
     <link rel="stylesheet" href="css/levin.css"/>
     <link rel="stylesheet" href="css/topfive.css"/>
+    <script src="js/topfive.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
@@ -32,6 +37,26 @@
       </div>
     </header>
     <main>
+      <script>
+        AOS.init();
+        swiper.init();
+      </script>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/conteudo/topfive.png"/></div>
+          <div class="swiper-slide"><img src="img/conteudo/kitsvinhos.png"/></div>
+          <div class="swiper-slide"><img src="img/conteudo/vinhos.png"/></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
       <div class="top">
         <div>
           <h2>Top 5</h2>
@@ -42,48 +67,58 @@
       </div>
       <ol>
         <li>
-          <img src="img/conteudo/top 5/cavatina.png" alt="" />
-          <div class="content">
-            <h2>5°</h2>
-            <p class="title">Cavatina Bardolino</p>
-            <span>ANO | TIPO | PAÍS</span>
-            <button>LER MAIS</button>
+          <div data-aos="fade-right">
+            <img src="img/conteudo/top 5/cavatina.png" alt="" />
+            <div class="content">
+              <h2>5°</h2>
+              <p class="title">Cavatina Bardolino</p>
+              <span>ANO | TIPO | PAÍS</span>
+              <button>LER MAIS</button>
+            </div>
           </div>
         </li>
         <li>
-          <img src="img/conteudo/top 5/chianti.png" alt="" />
-          <div class="content">
-            <h2>4°</h2>
-            <p class="title">Chianti DOCG</p>
-            <span>ANO | TIPO | PAÍS</span>
-            <button>LER MAIS</button>
+          <div data-aos="fade-left">
+            <img src="img/conteudo/top 5/chianti.png" alt="" />
+            <div class="content">
+              <h2>4°</h2>
+              <p class="title">Chianti DOCG</p>
+              <span>ANO | TIPO | PAÍS</span>
+              <button>LER MAIS</button>
+            </div>
           </div>
         </li>
         <li>
-          <img src="img/conteudo/top 5/piscine.png" alt="" />
-          <div class="content">
-            <h2>3°</h2>
-            <p class="title">Piscine Stripes</p>
-            <span>ANO | TIPO | PAÍS</span>
-            <button>LER MAIS</button>
+          <div data-aos="fade-right">
+            <img src="img/conteudo/top 5/piscine.png" alt="" />
+            <div class="content">
+              <h2>3°</h2>
+              <p class="title">Piscine Stripes</p>
+              <span>ANO | TIPO | PAÍS</span>
+              <button>LER MAIS</button>
+            </div>
           </div>
         </li>
         <li>
-          <img src="img/conteudo/top 5/mateus.png" alt="" />
-          <div class="content">
-            <h2>2°</h2>
-            <p class="title">Mateus</p>
-            <span>ANO | TIPO | PAÍS</span>
-            <button>LER MAIS</button>
+          <div data-aos="fade-left">
+            <img src="img/conteudo/top 5/mateus.png" alt="" />
+            <div class="content">
+              <h2>2°</h2>
+              <p class="title">Mateus</p>
+              <span>ANO | TIPO | PAÍS</span>
+              <button>LER MAIS</button>
+            </div>
           </div>
         </li>
         <li>
-          <img src="img/conteudo/top 5/romanee.png" alt="" />
-          <div class="content">
-            <h2>1°</h2>
-            <p class="title">Romanée Conti</p>
-            <span>ANO | TIPO | PAÍS</span>
-            <button>LER MAIS</button>
+          <div data-aos="fade-right">
+            <img src="img/conteudo/top 5/romanee.png" alt="" />
+            <div class="content">
+              <h2>1°</h2>
+              <p class="title">Romanée Conti</p>
+              <span>ANO | TIPO | PAÍS</span>
+              <button>LER MAIS</button>
+            </div>
           </div>
         </li>
       </ol>
