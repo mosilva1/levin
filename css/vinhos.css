@@ -1,45 +1,208 @@
 h1{
-    margin: 30px 100px 10px;
+    padding: 20px;
     color: var(--primary-dark);
 }
-.filter input{
-    margin: 10px;
-    border-radius: 10px;
+.conteudo{
+    display: grid;
+    grid-template-columns: 300px 1219px;
+    grid-template-rows: 1060px 70px;
 }
-.filter{
-    display: inline-flex;
+.filtro{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0 0 0 20px;
 }
-.tipos{
-    margin: 10px 70px 0 100px;
+.tipos h2{
+    font-family: "Robot-Medium" sans-serif;
+    color: var(--primary-dark);
+    font-size: 20px;
 }
-.tipos h3{
-    margin: 0;
+.preco h2{
+    font-family: "Robot-Medium" sans-serif;
+    color: var(--primary-dark);
+    font-size: 20px;
 }
-.preco{
-    margin: 10px 0 0 100px;
+.preco input{
+    height: 6px;
+    width: 200px;
 }
-.preco h3{
-    margin: 30px 0 10px;
+.preco-label1{
+    font-size: 12px;
+    margin: 0 5px;
 }
-.vinho1 , .vinho2 , .vinho3 , .vinho4 , .vinho5 , .vinho6{
+.preco-label2{
+    font-size: 12px;
+    margin: 0 81px;
+}
+.button-mais{
+    background-color: var(--primary-dark);
+    color: var(--white);
+    width: 50px;
+    height: 30px;
+    font-size: medium;
+    font-family: 'Roboto-Medium', sans-serif;
+    border-radius: 20px;
+    margin: 10px 70px;
+}
+.button-mais:hover{
+    font-weight: bold;
+}
+.vinhos{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 290px 290px 290px 290px;
+    grid-template-rows: 530px 530px;
+}
+.item1{
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: center;
-    background-color: #fff;
-    width: 30%;
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
     display: inline-block;
-    margin: 30px 0;
-    padding: 20px 0 20px 0 ;
+    margin: 10px 0;
+    padding: 10px 0 10px 0 ;
     box-shadow: 5px 5px 5px #b3b3b3;
 }
-.vinhos h4{
-    margin: 0;
-    width: 100%;
+.item2{
+    grid-column: 2/3;
+    grid-row: 1/2;
     text-align: center;
-    color: var(--primary);
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 0 10px 0 ;
+    box-shadow: 5px 5px 5px #b3b3b3;
+}
+.item3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 0 10px 0 ;
+    box-shadow: 5px 5px 5px #b3b3b3;
+}
+.item4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 0 10px 0 ;
+    box-shadow: 5px 5px 5px #b3b3b3;
+}
+.item5{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 0 10px 0 ;
+    box-shadow: 5px 5px 5px #b3b3b3;
+}
+.item6{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 0 10px 0 ;
+    box-shadow: 5px 5px 5px #b3b3b3;
+}
+.item7{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 0 10px 0 ;
+    box-shadow: 5px 5px 5px #b3b3b3;
+}
+.item8{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #ffffff;
+    width: 95%;
+    height: 90%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 0 10px 0 ;
+    box-shadow: 5px 5px 5px #b3b3b3;
+}
+.vinhos img{
+    height: 250px;
+    width: 250px;
+}
+.valor{
+    display: inline-flex;
+}
+.valor p{
+    font-family: "Robot" sans-serif;
+    color: var(--dark-gray);
+    font-size: 10px;
+    text-align: justify;
+}
+.vinhos h4{
+    font-family: "Robot-Medium" sans-serif;
+    color: var(--primary-dark);
+    font-size: 20px;
+    padding: 0 5px;
+    text-align: justify;
+}
+.vinhos h2{
+    font-family: "Robot-Medium" sans-serif;
+    color: var(--primary-dark);
+    font-size: 20px;
 }
 .vinhos button{
-    float: none;
+    background-color: var(--primary-dark);
+    color: var(--white);
+    width: 90px;
+    height: 70px;
+    font-size: medium;
+    font-family: 'Roboto-Medium', sans-serif;
+    border-radius: 8%;
+    padding: 0 5px;
 }
-.vinhos h5{
-    font-size: large;
-    color: var(--primary);
+.vinhos button:hover{
+    font-weight: bold;
+    color: var(--dark-gray);
+    background-color: var(--light-gray);
 }
+.box-button{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 20px 734.5px;
+}
+.button{
+    background-color: var(--primary-dark);
+    color: var(--white);
+    width: 50px;
+    height: 30px;
+    font-size: medium;
+    font-family: 'Roboto-Medium', sans-serif;
+    border-radius: 20px;
+  }
+  .button:hover{
+    font-weight: bold;
+  }

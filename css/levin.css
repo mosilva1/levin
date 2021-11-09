@@ -93,7 +93,7 @@ footer {
 }
 .conteiner3 {
   display: grid;
-  grid-template-columns: 260px auto 600px;
+  grid-template-columns: 260px 250px 250px 350px auto;
   grid-template-rows: 120px 130px;
 }
 .titulo-footer {
@@ -125,6 +125,12 @@ footer {
 .bloco3-footer {
   grid-column: 4/4;
   grid-row: 2/3;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.bloco4-footer {
+  grid-column: 5/6;
+  grid-row: 2/3;
   margin: 17.5px 30px;
 }
 .bloco3-footer img {
@@ -134,44 +140,6 @@ footer {
 }
 .banner img {
   width: 100%;
+  height: 100%;
 }
-/* fim da estilização: cabeçalho, rodapé, fonte.*/
-
-.banner {
-  display: inline-block;
-  position: relative;
-}
-.search-box {
-  position: absolute;
-  top: 400px;
-  left: 409px;
-  background-color: var(--light-gray);
-  height: 40px;
-  border-radius: 50px;
-  padding: 10px;
-}
-.search-btn {
-  color: var(--error);
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: var(--primary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.search-btn:hover {
-  border: 1px solid var(--primary-dark);
-}
-.search-txt {
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0;
-  color: var(--dark-gray);
-  font-size: 20px;
-  line-height: 40px;
-  width: 700px;
-}
+/* fim da estilização: cabeçalho, rodapé, fonte*/
