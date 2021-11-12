@@ -1,0 +1,15 @@
+.bloco{
+  text-align: center;
+  display: flex;
+}
+.texto{
+  color: var(--dark-gray);
+  text-align: justify;
+  font-size: medium;
+  background-color: var(--white);
+  margin: 30px;
+  padding: 15px;
+  box-shadow: 5px 5px 5px var(--dark-gray);
+  border-radius: 10px;
+  
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>levin</title>
+    <link rel="stylesheet" href="css/levin.css">
+    <link rel="stylesheet" href="css/quemsomos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <script> src="js/quemsomos.js" </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
+</head>
+<body class="conteiner">
+    <header>
+        <div class="header">
+            <div>
+                <a title="levin" href="levin.html"><img class="logo" src="img/logo1.svg" alt="levin"></a>
+            </div>
+            <div class="login">
+                <a title="Conta" href="login.html"><img class="conta" src="img/perfil-de-usuario.png" alt="login"></a>     
+            </div>
+            <nav class="barramenu">
+                <div class="menu">
+                    <a class="icone" title="Vinhos" href="vinhos.html"><img src="img/icone vinho.png" alt="Vinhos" srcset=""></a>
+                    <a class="icone" title="Top Five" href="topfive.html"><img src="img/trophy.png" alt="topfive" srcset=""></a>
+                    <a class="icone" title="Kits de Vinhos" href="kitsdevinhos.html"><img src="img/icone kit.png" alt="kitsdevinhos" srcset=""></a>
+                    <a class="icone" title="Dicas do Sommelier" href="sommelier.html"><img src="img/icone sommelier.png" alt="sommelier" srcset=""></a>
+                    <a class="icone" title="Enoturismo" href="enoturismo.html"><img src="img/icone enoturismo.png" alt="enoturismo" srcset=""></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="grade" >
+            <div class="texto" >
+                <h1>Quem Somos</h1><br>
+                <p>O levin foi criado para quem vive do vinho e para quem não vive sem ele.</p><br>
+                <p>Buscamos oferecer vários caminhos para que você encontre os melhores vinhos, e também dicas para degustação, harmonização e o turismo.</p>
+            </div>
+            <div class="texto2" >
+                <h1>Onde Estamos</h1><br>
+                <p>Av. Dr. Flávio Henrique Lemos, 585 - Portal Itamaracá</p>
+                <p>Taquaritinga - SP CEP: 15906-522</p>
+            </div>
+            <div class="map-poisition" >
+                <div id="map" style="width: 550px; height: 550px; position: relative; outline: none;" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0">
+                    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                            <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);">
+                                <img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/12/2046/1361?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(-200px, -347px, 0px); opacity: 1;">
+                                <img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/12/2047/1361?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(312px, -347px, 0px); opacity: 1;">
+                                <img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/12/2046/1362?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(-200px, 165px, 0px); opacity: 1;">
+                                <img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/12/2047/1362?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(312px, 165px, 0px); opacity: 1;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leaflet-pane leaflet-shadow-pane">
+                        <img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(477px, 226px, 0px);">
+                    </div>
+                    <div class="leaflet-pane leaflet-overlay-pane">
+                    </div>
+                    <div class="leaflet-pane leaflet-marker-pane">
+                        <img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(477px, 226px, 0px); z-index: 226; outline: none;">
+                    </div>
+                    <div class="leaflet-pane leaflet-tooltip-pane">
+                    </div>
+                    <div class="leaflet-pane leaflet-popup-pane">
+                        <div class="leaflet-popup  leaflet-zoom-animated" style="opacity: 1; transform: translate3d(478px, 192px, 0px); bottom: -7px; left: -78px;">
+                            <div class="leaflet-popup-content-wrapper">
+                                <div class="leaflet-popup-content" style="width: 116px;">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Um lindo pop-up CSS3. </font>
+                                    </font><br>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Facilmente personalizável.</font>
+                                    </font>
+                                </div>
+                            </div>
+                            <div class="leaflet-popup-tip-container">
+                                <div class="leaflet-popup-tip"></div>
+                            </div>
+                            <a class="leaflet-popup-close-button" href="#close">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">×</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="leaflet-popup-tip-container">
+                        <div class="leaflet-popup-tip"></div>
+                    </div>
+                    <a class="leaflet-popup-close-button" href="#close">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">×</font>
+                        </font>
+                    </a>
+                </div>
+            </div>
+                <div class="leaflet-control-container">
+                    <div class="leaflet-top leaflet-left">
+                        <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+                            <a class="leaflet-control-zoom-in" href="#" title="Mais Zoom" role="button" aria-label="Mais Zoom">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                    </font>
+                                </font></a><a class="leaflet-control-zoom-out" href="#" title="Reduzir o zoom" role="button" aria-label="Reduzir o zoom">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">
+                                        </font>
+                                    </font>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="leaflet-top leaflet-right">
+                        </div>
+                        <div class="leaflet-bottom leaflet-left">
+                        </div>
+                        <div class="leaflet-bottom leaflet-right">
+                            <div class="leaflet-control-attribution leaflet-control">
+                                <a href="https://leafletjs.com" title="Uma biblioteca JS para mapas interativos">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;"></font>
+                                    </font>
+                                </a>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;"></font>
+                                    <font style="vertical-align: inherit;"></font>
+                                    <font style="vertical-align: inherit;"></font>
+                                    <font style="vertical-align: inherit;"></font>
+                                </font>
+                                <a href="https://www.openstreetmap.org/copyright">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;"></font>
+                                    </font>
+                                </a>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                    </font>
+                                </font>
+                                <a href="https://www.mapbox.com/">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">
+                                        </font>
+                                    </font>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <script>
+                    var mymap = L.map('map').setView([-21.430106, -48.515308], 13);
+                
+                    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                        maxZoom: 18,
+                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                        id: 'mapbox/streets-v11',
+                        tileSize: 512,
+                        zoomOffset: -1
+                    }).addTo(mymap);
+                </script>
+            </div>
+        </div>
+    </main>
+    <footer class="conteiner3">
+        <a href="#"><img class="logo-footer" src="img/logo2.svg" alt="" srcset=""></a>
+        <div class="bloco1-footer">
+            <a class="rotulos-footer" title="Vinhos" href="vinhos.html">Vinhos</a><br>
+            <a class="rotulos-footer" title="Kit Vinhos" href="kitsdevinhos.html">Kits de Vinhos</a><br>
+            <a class="rotulos-footer" title="Top Five" href="topfive.html">Top 5</a><br>
+            <a class="rotulos-footer" title="Sommelier" href="sommelier.html">Dicas do Sommelier</a><br>
+            <a class="rotulos-footer" title="Enoturismo" href="enoturismo.html">Enoturismo</a><br>
+        </div>
+        <div class="bloco2-footer">
+            <a class="rotulos-footer" title="Acessar sua Conta" href="login.html">Acessar sua Conta</a><br>
+            <a class="rotulos-footer" title="Cadastro" href="cadastro.html">Cadastro</a><br>
+            <a class="rotulos-footer" title="Política de Privacidade" href="loren.html">Política de Privacidade</a><br>
+            <a class="rotulos-footer" title="Termos de Uso" href="loren.html">Termos de Uso</a><br>
+            <a class="rotulos-footer" title="Central de Ajuda" href="loren.html">Central de Ajuda</a><br>        
+        </div>
+        <div class="bloco3-footer">
+                <a class="rotulos-footer" title="Quem Somos" href="quemsomos.html">Quem Somos</a><br>
+                <a class="rotulos-footer" title="Ofertas" href="ofertas.html">Receba nossas ofertas</a><br>
+        </div>
+        <div class="bloco4-footer">
+            <div class="contato">
+                <a title="Facebook" href="vinhos.html"><img src="img/facebook.png" alt="Facebook" srcset=""></a>
+                <a title="Instagram" href="kitsdevinhos.html"><img src="img/instagram.png" alt="Instagram" srcset=""></a>
+                <a title="E-mail" href="mailto:contato@levin.com.br"><img src="img/email.png" alt="E-mail" srcset=""></a>
+                <a title="WhatsApp" href="sommelier.html"><img src="img/whatsapp.png" alt="WhatsApp" srcset=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

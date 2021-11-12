@@ -39,11 +39,34 @@
     <main>
       <script>
         AOS.init();
-        swiper.init();
       </script>
-      <div class="swiper">
+      <script>
+        const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    
+  });
+      </script>
+      <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" id="swiper-wrapper-aa6bfa6b4020c7d5">
           <!-- Slides -->
           <div class="swiper-slide"><img src="img/conteudo/topfive.png"/></div>
           <div class="swiper-slide"><img src="img/conteudo/kitsvinhos.png"/></div>
@@ -57,67 +80,55 @@
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
-      <div class="top">
-        <div>
-          <h2>Top 5</h2>
-          <h3>Os preferidos pelos VinLovers</h3>
-          <p>Uma lista dos vinhos mais bem avaliados pelos VinLovers.</p>
-        </div>
-        <img class="demonstration" src="img/conteudo/top 5/wine.webp" alt=""/>
-      </div>
+      <h1>Top 5: a lista dos vinhos mais bem avaliados pelos VinLovers</h1>
       <ol>
         <li>
           <div data-aos="fade-right">
-            <img src="img/conteudo/top 5/cavatina.png" alt="" />
+            <img src="img/conteudo/vinhos/1 - Colimoro Montepulciano D’Abruzzo.jpg" alt="" />
             <div class="content">
-              <h2>5°</h2>
-              <p class="title">Cavatina Bardolino</p>
-              <span>ANO | TIPO | PAÍS</span>
-              <button>LER MAIS</button>
+              <p class="title"> 5° Colimoro Montepulciano D’Abruzzo</p>
+              <span>2019 | 750ml | Tinto | Itália</span>
+              <a href="compra.html" ><button>COMPRAR</button></a>
             </div>
           </div>
         </li>
         <li>
           <div data-aos="fade-left">
-            <img src="img/conteudo/top 5/chianti.png" alt="" />
+            <img src="img/conteudo/vinhos/4 - Vinho Francês Duc De Montgérald.jpg" alt="" />
             <div class="content">
-              <h2>4°</h2>
-              <p class="title">Chianti DOCG</p>
-              <span>ANO | TIPO | PAÍS</span>
-              <button>LER MAIS</button>
+              <p class="title"> 4° Vinho Francês Duc De Montgérald</p>
+              <span>2016 | 750ml | Tinto | França</span>
+              <a href="compra.html" ><button>COMPRAR</button></a>
             </div>
           </div>
         </li>
         <li>
           <div data-aos="fade-right">
-            <img src="img/conteudo/top 5/piscine.png" alt="" />
+            <img src="img/conteudo/vinhos/5 - La Junta Calicata Syrah.jpg" alt="" />
             <div class="content">
-              <h2>3°</h2>
-              <p class="title">Piscine Stripes</p>
-              <span>ANO | TIPO | PAÍS</span>
-              <button>LER MAIS</button>
+              <p class="title"> 3° La Junta Calicata Syrah</p>
+              <span>2016 | 750ml | Tinto | Chile</span>
+              <a href="compra.html" ><button>COMPRAR</button></a>
             </div>
           </div>
         </li>
         <li>
           <div data-aos="fade-left">
-            <img src="img/conteudo/top 5/mateus.png" alt="" />
+            <img src="img/conteudo/vinhos/6 - Tarapacá Etiqueta Azul Gran.jpg" alt="" />
             <div class="content">
-              <h2>2°</h2>
-              <p class="title">Mateus</p>
-              <span>ANO | TIPO | PAÍS</span>
-              <button>LER MAIS</button>
+              <p class="title"> 2° Tarapacá Etiqueta Azul Gran</p>
+              <span>2016 | 750ml | Tinto | Chile</span>
+              <a href="compra.html" ><button>COMPRAR</button></a>
             </div>
           </div>
         </li>
         <li>
           <div data-aos="fade-right">
-            <img src="img/conteudo/top 5/romanee.png" alt="" />
+            <img src="img/conteudo/vinhos/8 - Enzo Bianchi.jpg" alt="" />
             <div class="content">
-              <h2>1°</h2>
-              <p class="title">Romanée Conti</p>
-              <span>ANO | TIPO | PAÍS</span>
-              <button>LER MAIS</button>
+              <p class="title"> 1° Enzo Bianchi</p>
+              <span>2017 | 750ml | Tinto | Argentina</span>
+              <a href="compra.html" ><button>COMPRAR</button></a>
             </div>
           </div>
         </li>
@@ -125,26 +136,41 @@
       <section class="similar-products">
         <h3 class="title">Produtos Similares</h3>
         <ul>
-          <li>
-            <img src="img/conteudo/top 5/wine-man.webp" alt="" />
+          <li class="publi-botton-kit" >
+            <img class="publi-botton-kit" src="img/conteudo/kits/kit-one.png" alt="" />
+            <h3 class="title">Kit Tintos Europeus Sensacionais</h3>
+            <p>4 Itens | 750 ml</p>
+            <a href="compra.html" ><button>COMPRAR</button></a>
           </li>
-          <li>
-            <img src="img/conteudo/top 5/kit-one.png" alt="" />
-            <h3 class="title">Kit Tintos Europeus Sensacionais (4 garrafas)</h3>
-            <p>4 Itens 750 ml</p>
-            <button>LER MAIS</button>
+          <li class="publi-botton-kit">
+            <img class="publi-botton-kit" src="img/conteudo/kits/kit-two.png" alt="" />
+            <h3 class="title">Kit Tintos Campeões Wine</h3>
+            <p>10 Itens | 750 ml</p>
+            <a href="compra.html" ><button>COMPRAR</button></a>
           </li>
-          <li>
-            <img src="img/conteudo/top 5/kit-two.png" alt="" />
-            <h3 class="title">Kit 10 Tintos Campeões Wine</h3>
-            <p>10 Itens 750 ml</p>
-            <button>LER MAIS</button>
+          <li class="publi-botton-kit">
+            <img class="publi-botton-kit" src="img/conteudo/kits/kit-three.png" alt="" />
+            <h3 class="title">Kit Mix Uvas Mosen Pierre</h3>
+            <p>4 Itens | 750 ml</p>
+            <a href="compra.html" ><button>COMPRAR</button></a>
           </li>
-          <li>
-            <img src="img/conteudo/top 5/kit-three.png" alt="" />
-            <h3 class="title">Kit Mix Uvas Mosen Pierre (4 garrafas)</h3>
-            <p>4 Itens 750 ml</p>
-            <button>LER MAIS</button>
+          <li class="publi-botton-kit" >
+            <img class="publi-botton-kit" src="img/conteudo/kits/kit-one.png" alt="" />
+            <h3 class="title">Kit Tintos Europeus Sensacionais</h3>
+            <p>4 Itens | 750 ml</p>
+            <a href="compra.html" ><button>COMPRAR</button></a>
+          </li>
+          <li class="publi-botton-kit">
+            <img class="publi-botton-kit" src="img/conteudo/kits/kit-two.png" alt="" />
+            <h3 class="title">Kit Tintos Campeões Wine</h3>
+            <p>10 Itens | 750 ml</p>
+            <a href="compra.html" ><button>COMPRAR</button></a>
+          </li>
+          <li class="publi-botton-kit">
+            <img class="publi-botton-kit" src="img/conteudo/kits/kit-three.png" alt="" />
+            <h3 class="title">Kit Mix Uvas Mosen Pierre</h3>
+            <p>4 Itens | 750 ml</p>
+            <a href="compra.html" ><button>COMPRAR</button></a>
           </li>
         </ul>
       </section>
@@ -159,11 +185,11 @@
           <a class="rotulos-footer" title="Enoturismo" href="enoturismo.html">Enoturismo</a><br>
       </div>
       <div class="bloco2-footer">
-          <a class="rotulos-footer" title="Acessar sua Conta" href="login.html">Acessar sua Conta</a><br>
-          <a class="rotulos-footer" title="Cadastro" href="cadastro.html">Cadastro</a><br>
-          <a class="rotulos-footer" title="Política de Privacidade" href="políticaprivacidade.html">Política de Privacidade</a><br>
-          <a class="rotulos-footer" title="Termos de Uso" href="termosuso.html">Termos de Uso</a><br>
-          <a class="rotulos-footer" title="Central de Ajuda" href="centraldeajuda.html">Central de Ajuda</a><br>        
+        <a class="rotulos-footer" title="Acessar sua Conta" href="login.html">Acessar sua Conta</a><br>
+        <a class="rotulos-footer" title="Cadastro" href="cadastro.html">Cadastro</a><br>
+        <a class="rotulos-footer" title="Política de Privacidade" href="loren.html">Política de Privacidade</a><br>
+        <a class="rotulos-footer" title="Termos de Uso" href="loren.html">Termos de Uso</a><br>
+        <a class="rotulos-footer" title="Central de Ajuda" href="loren.html">Central de Ajuda</a><br>        
       </div>
       <div class="bloco3-footer">
               <a class="rotulos-footer" title="Quem Somos" href="quemsomos.html">Quem Somos</a><br>

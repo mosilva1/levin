@@ -1,40 +1,79 @@
+.conteudo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
 .card{
-    display: inline-flex;
-    border: solid var(--primary) ;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: 5px 5px 5px #b3b3b3;
+    background-color: var(--white);
     border-radius: 10px;
     width: 90%;
-    padding: 10px 0 10px 0 ;
-    background-color: var(--white);
+    margin: 20px 0 20px 30px;
+    padding: 20px;
 }
-.conteudo{
-    text-align: center;
+.conteudo1{
+    grid-column: 1/2;
+    text-align: justify;
 }
 .card1{
+    display: flex;
     width: 25%;
-    text-align: left;
     margin-left: 10px;
+    align-items: center;
 }
 .card1 img{
     border: solid var(--primary);
-    border-radius: 150px;
+    border-radius: 50%;
+    width: 300px;
 }
 .card2{
-    text-align: left;
+    text-align: justify;
+}
+.card2 h2{
+    font-family: "Roboto-Medium" sans-serif;
+    font-size: 30px;
+    color: var(--primary);
 }
 .card2 h3{
-    margin: 0;
+    font-family: "Roboto-Medium" sans-serif;
+    font-size: 20px;
+    color: var(--primary);
+}
+.card2 p{
+    font-family: "Roboto-Medium" sans-serif;
+    font-size: 18px;
+    color: var(--dark-gray);
 }
 .conteudo2{
-    margin: 30px 100px 10px;
+    grid-column: 2/3;
+    margin: 0 0 20px 90px;
     color: var(--primary);
+}
+.card3{
+    box-shadow: 5px 5px 5px #b3b3b3;
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 30px 0 0;
+    padding: 20px;
+}
+.conteudo2 h1{
+    text-align: justify;
+    padding-bottom: 10px ;
 }
 .conteudo2 h2{
     margin: 0;
     margin-bottom: 20px;
 }
 .parceria{
-    display: inline-flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    grid-template-rows: 91px;
+    width: 90%;
     border-bottom: 1px solid var(--dark-gray);
     margin-bottom: 10px;
 }
@@ -42,7 +81,41 @@
     margin: 0;
 }
 .subparceria{
-    display: inline-flex;
     margin-right: 82%;
     text-align: center;
+}
+.parceria img{
+    grid-column: 1/2;
+    height: 70px;
+    width: 170px;
+    padding: 5px;
+}
+.title-parceiro{
+    grid-column: 2/3;
+}
+.compra{
+    grid-column: 3/4;
+    text-align: right;
+}
+.compra h5{
+    font-family: "Roboto-Medium" sans-serif;
+    font-size: 20px;
+    color: var(--primary);
+    text-align: right;
+    margin-right: 5px;
+}
+.compra button{
+    background-color: var(--primary);
+    color: var(--white);
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Roboto-Medium', sans-serif;
+    border-radius: 8%;
+    padding: 0 5px;
+    margin: 10px 5px;
+}
+.compra button:hover{
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
 }
