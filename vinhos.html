@@ -7,6 +7,8 @@
     <title>levin</title>
     <link rel="stylesheet" href="css/levin.css">
     <link rel="stylesheet" href="css/vinhos.css">
+    <link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
@@ -32,9 +34,47 @@
         </div>
     </header>
     <main>
-        <div class="banner">
-            <img title="Vinhos" src="img/conteudo/vinho.png" alt="enoturismo">
-        </div>
+    
+        <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="swiper-wrapper-aa6bfa6b4020c7d5">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/conteudo/vinho.png"/></div>
+              <div class="swiper-slide"><img src="img/conteudo/kitsvinhos.png"/></div>
+              <div class="swiper-slide"><img src="img/conteudo/sommelier1.png"/></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <script>
+            const swiper = new Swiper('.swiper', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: true,
+    
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+              },
+    
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+    
+              // And if we need scrollbar
+              scrollbar: {
+                el: '.swiper-scrollbar',
+              },
+              
+            });
+          </script>
         <h1>Os vinhos preferidos pelos VinLovers</h1>
         <div class="conteudo">
             <div class="filtro">

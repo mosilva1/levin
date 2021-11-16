@@ -7,16 +7,10 @@
     <title>levin</title>
     <link rel="stylesheet" href="css/levin.css" />
     <link rel="stylesheet" href="css/login.css" />
-    <script src="./js/login.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body class="conteiner">
     <header>
@@ -39,23 +33,70 @@
       </div>
     </header>
     <main>
-      <form id="form-login">
-        <div class="header">
-          <img src="./img/perfil-de-usuario negativo.png" alt="" />
-          <h2>Acesse sua conta</h2>
+        <div class="container-login" >   
+            <div class="container right-panel-active">
+                <!-- Sign Up -->
+                <div class="container__form container--signup">
+                    <form action="#" class="form" id="form1">
+                        <h2 class="form__title">Cadastre-se</h2>
+                        <input type="text" placeholder="Usuário" class="input" />
+                        <input type="email" placeholder="E-mail" class="input" />
+                        <input type="password" placeholder="Senha" class="input" />
+                        <div class="terms">
+                            <input type="checkbox" id="terms" required />
+                            <label for="terms">Eu aceito os <a href="loren.html">Termos de Uso.</a></label>
+                          </div>
+                          <div class="offers">
+                            <input type="checkbox" id="offers" />
+                            <label for="offers">Eu aceito receber ofertas exclusivas.</label>
+                          </div>
+                        <button class="btn">Cadastrar</button>
+                    </form>
+                </div>
+            
+                <!-- Sign In -->
+                <div class="container__form container--signin">
+                    <form action="#" class="form" id="form2">
+                        <h2 class="form__title">Acesse a Conta</h2>
+                        <input type="email" placeholder="E-mail" class="input" />
+                        <input type="password" placeholder="Senha" class="input" />
+                        <a href="#" class="link">Esqueceu a Senha?</a>
+                        <button class="btn">Entrar</button> 
+                    </form>
+                </div>
+            
+                <!-- Overlay -->
+                <div class="container__overlay">
+                    <div class="overlay">
+                        <div class="overlay__panel overlay--left">
+                            <button class="btn" id="signIn">Login</button>
+                        </div>
+                        <div class="overlay__panel overlay--right">
+                            <button class="btn" id="signUp">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-group">
-          <input type="email" name="email" placeholder="E-mail" required />
-          <input type="password" name="password" placeholder="Senha" required minlength="8" />
-          <div class="remember">
-            <input type="checkbox" id="remember" />
-            <label for="remember">Lembrar-me</label>
-          </div>
-          <button type="submit">Entrar</button>
-          <a href="./cadastro.html">Cadastre-se</a>
-          <a href="">Esqueceu a senha?</a>
-        </div>
-      </form>
+        <script>
+            const signInBtn = document.getElementById("signIn");
+            const signUpBtn = document.getElementById("signUp");
+            const fistForm = document.getElementById("form1");
+            const secondForm = document.getElementById("form2");
+            const container = document.querySelector(".container");
+
+            signInBtn.addEventListener("click", () => {
+                container.classList.remove("right-panel-active");
+            });
+
+            signUpBtn.addEventListener("click", () => {
+                container.classList.add("right-panel-active");
+            });
+
+            fistForm.addEventListener("submit", (e) => e.preventDefault());
+            secondForm.addEventListener("submit", (e) => e.preventDefault());
+
+        </script>
     </main>
     <footer class="conteiner3">
       <a href="#"><img class="logo-footer" src="img/logo2.svg" alt="" srcset=""></a>

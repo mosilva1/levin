@@ -60,9 +60,8 @@
                         // Set latitude and longitude of the map center (required)
                         center: [-21.430106, -48.515308],
                         // Set the initial zoom level, values 0-18, where 0 is most zoomed-out (required)
-                        zoom: 11
+                        zoom: 10
                     });
-                     
                     
                     // Create a Tile Layer and add it to the map
                     var tiles = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -77,7 +76,8 @@
                         opacity: 0.75
                     });
                     
-                    marker.addTo(map).bindPopup("<p1><b>Levin</p1>") .openPopup();</script>
+                    marker.addTo(map).bindPopup("<p1><b>Levin</p1>") .openPopup();
+                </script>
             </div>
         </div>
     </main>

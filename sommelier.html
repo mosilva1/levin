@@ -7,6 +7,8 @@
     <title>levin</title>
     <link rel="stylesheet" href="css/levin.css">
     <link rel="stylesheet" href="css/sommelier.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
@@ -39,29 +41,38 @@
             <h1>Dicas do Sommelier</h1>
         </div>
         <div class="box">
+            <script type="text/javascript">
+                const lightbox = GLightbox({ ...options });
+            </script>
             <div class="conteiner-destaque">
                 <div class="destaque1">
-                    <img class="destaque-img" src="img/conteudo/vinhotaca.jpg" alt=" ">  
+                    <a href="img/conteudo/vinhotaca.jpg" class="glightbox3" data-gallery="gallery1">
+                        <img class="destaque-img" src="img/conteudo/vinhotaca.jpg" alt="image" />
+                    </a>
                     <h2>Para cada vinho, uma taça</h2>
                     <div class="materia">    
                         <p>Existe um tipo de taça para cada vinho? Qual é a taça certa para vinho tinto e branco? Aprenda com a Levin a escolher as suas taças.</p>
-                        <button type="button" id="lermais" href="materia1.html">Ler Mais</button> 
+                        <a href="loren.html"><button type="button" id="lermais">Ler Mais</button></a>
                     </div>
                 </div>
                 <div class="destaque2">
-                    <img class="destaque-img" src="img/conteudo/redchamaleon.jpg" alt="">  
+                    <a href="img/conteudo/redchamaleon.jpg" class="glightbox3" data-gallery="gallery1">
+                        <img class="destaque-img" src="img/conteudo/redchamaleon.jpg" alt="image" />
+                    </a>  
                     <h2>Como conservar o vinho em casa</h2>
                     <div class="materia">    
                         <p>Como é o consumo de garrafas de vinho em sua casa? Você as adquire para guardá-las ou para consumo rápido? Seguem dicas para quem está pensando em investir.</p>
-                        <button type="button" id="lermais" href="materia1.html">Ler Mais</button>
+                        <a href="loren.html"><button type="button" id="lermais">Ler Mais</button></a>
                     </div>
                 </div>
                 <div class="destaque3">
-                    <img class="destaque-img" src="img/conteudo/marieclaire.jpg" alt=" ">  
+                    <a href="img/conteudo/marieclaire.jpg" class="glightbox3" data-gallery="gallery1">
+                        <img class="destaque-img" src="img/conteudo/marieclaire.jpg" alt="image" />
+                    </a> 
                     <h2>Vinho Rosé e torta de chocolate</h2>
                     <div class="materia">    
                         <p>O chocolate é uma das harmonizações protagonistas para acompanhar vinhos do tipo frisante, especialmente, o Rosé. Que tal aprender a preparar essa combinação?</p>
-                        <button type="button" id="lermais" href="materia1.html">Ler Mais</button> 
+                        <a href="loren.html"><button type="button" id="lermais">Ler Mais</button></a> 
                     </div>
                 </div>
             </div>
@@ -75,7 +86,7 @@
                         <h2>Acessórios para conservar o vinho</h2>
                         <div class="materia">    
                             <p>Uma das dúvidas mais frequentes dos apreciadores de vinhos é sobre o quanto tempo depois de aberto um vinho continua bom para beber. Bom, tudo isso depende, é claro, da forma como ele será conservado.</p>
-                            <button type="button" id="lermais" href="materia1.html">Ler Mais</button> 
+                            <a href="loren.html"><button type="button" id="lermais">Ler Mais</button></a> 
                         </div>
                     </div>
                     <div class="destaque2">
@@ -83,7 +94,7 @@
                         <h2>Para que serve um corta-gotas?</h2>
                         <div class="materia">    
                             <p>Além de encontrar os mais variados tipos de vinhos, também é possível achar uma infinidade de utensílios que estão relacionados com a bebida, especialmente aqueles que têm como objetivo facilitar a sua degustação.</p>
-                            <button type="button" id="lermais" href="materia1.html">Ler Mais</button>
+                            <a href="loren.html"><button type="button" id="lermais">Ler Mais</button></a>
                         </div>
                     </div>
                     <div class="destaque3">
@@ -91,12 +102,12 @@
                         <h2>Caderneta do Vinho</h2>
                         <div class="materia">    
                             <p>Abrir um vinho e analisar suas características é um momento de concentração e até mesmo de prazer. Para algumas pessoas abrir um vinho é um hobby ou está relacionado aos estudos para certificação.</p>
-                            <button type="button" id="lermais" href="materia1.html">Ler Mais</button> 
+                            <a href="loren.html"><button type="button" id="lermais">Ler Mais</button></a>
                         </div>
                     </div>
                 </div>
                 <div class="box-button" >
-                    <button class="button" type="button" id="maisartigos" href="materia1.html">+</button>
+                    <a href="loren.html"><button class="button" type="button" id="maisartigos">+</button></a>
                 </div>
             </div>
         </div>
