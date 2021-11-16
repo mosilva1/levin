@@ -1,5 +1,10 @@
 #map { 
-    height: 80%; 
+    height: 550px;
+    width: 550px;
+}
+  
+.leaflet-popup-content-wrapper {
+    width: 100%;
 }
 .grade{
     display: grid;
@@ -9,7 +14,7 @@
 .texto{
     grid-column: 1/2;
     grid-row: 1/2;
-    text-align: justify;
+    text-align: center;
     width: 600px;
     height: 300px;
     display: inline-block;
@@ -28,7 +33,7 @@
 .texto2{
     grid-column: 1/2;
     grid-row: 2/3;
-    text-align: justify;
+    text-align: center;
     width: 600px;
     height: 190px;
     display: inline-block;

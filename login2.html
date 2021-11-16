@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>levin</title>
+    <link rel="stylesheet" href="css/levin.css" />
+    <link rel="stylesheet" href="css/login2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="conteiner">
+    <header>
+      <div class="header">
+        <div>
+          <a title="levin" href="levin.html"><img class="logo" src="img/logo1.svg" alt="levin"/></a>
+        </div>
+        <div class="login">
+          <a title="Conta" href="login.html"><img class="conta" src="img/perfil-de-usuario negativo.png" alt="login"/></a>
+        </div>
+        <nav class="barramenu">
+          <div class="menu">
+            <a class="icone" title="Vinhos" href="vinhos.html"><img src="img/icone vinho.png" alt="Vinhos" srcset=""/></a>
+            <a class="icone" title="Top Five" href="topfive.html"><img src="img/trophy.png" alt="topfive" srcset=""/></a>
+            <a class="icone" title="Kits de Vinhos" href="kitsdevinhos.html"><img src="img/icone kit.png" alt="kitsdevinhos" srcset=""/></a>
+            <a class="icone" title="Dicas do Sommelier" href="sommelier.html"><img src="img/icone sommelier.png" alt="sommelier" srcset=""/></a>
+            <a class="icone" title="Enoturismo" href="enoturismo.html"><img src="img/icone enoturismo.png" alt="enoturismo" srcset=""/></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div class="container-login" >   
+            <div class="container right-panel-active">
+                <!-- Sign Up -->
+                <div class="container__form container--signup">
+                    <form action="#" class="form" id="form1">
+                        <h2 class="form__title">Cadastre-se</h2>
+                        <input type="text" placeholder="Usuário" class="input" />
+                        <input type="email" placeholder="E-mail" class="input" />
+                        <input type="password" placeholder="Senha" class="input" />
+                        <div class="terms">
+                            <input type="checkbox" id="terms" required />
+                            <label for="terms">Eu aceito os <a href="">Termos de Serviço.</a></label>
+                          </div>
+                          <div class="offers">
+                            <input type="checkbox" id="offers" />
+                            <label for="offers">Eu aceito receber ofertas exclusivas.</label>
+                          </div>
+                        <button class="btn">Cadastrar</button>
+                    </form>
+                </div>
+            
+                <!-- Sign In -->
+                <div class="container__form container--signin">
+                    <form action="#" class="form" id="form2">
+                        <h2 class="form__title">Acesse a Conta</h2>
+                        <input type="email" placeholder="E-mail" class="input" />
+                        <input type="password" placeholder="Senha" class="input" />
+                        <a href="#" class="link">Esqueceu a Senha?</a>
+                        <button class="btn">Entre</button> 
+                    </form>
+                </div>
+            
+                <!-- Overlay -->
+                <div class="container__overlay">
+                    <div class="overlay">
+                        <div class="overlay__panel overlay--left">
+                            <button class="btn" id="signIn">Login</button>
+                        </div>
+                        <div class="overlay__panel overlay--right">
+                            <button class="btn" id="signUp">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const signInBtn = document.getElementById("signIn");
+            const signUpBtn = document.getElementById("signUp");
+            const fistForm = document.getElementById("form1");
+            const secondForm = document.getElementById("form2");
+            const container = document.querySelector(".container");
+
+            signInBtn.addEventListener("click", () => {
+                container.classList.remove("right-panel-active");
+            });
+
+            signUpBtn.addEventListener("click", () => {
+                container.classList.add("right-panel-active");
+            });
+
+            fistForm.addEventListener("submit", (e) => e.preventDefault());
+            secondForm.addEventListener("submit", (e) => e.preventDefault());
+
+        </script>
+    </main>
+    <footer class="conteiner3">
+      <a href="#"><img class="logo-footer" src="img/logo2.svg" alt="" srcset=""></a>
+      <div class="bloco1-footer">
+          <a class="rotulos-footer" title="Vinhos" href="vinhos.html">Vinhos</a><br>
+          <a class="rotulos-footer" title="Kit Vinhos" href="kitsdevinhos.html">Kits de Vinhos</a><br>
+          <a class="rotulos-footer" title="Top Five" href="topfive.html">Top 5</a><br>
+          <a class="rotulos-footer" title="Sommelier" href="sommelier.html">Dicas do Sommelier</a><br>
+          <a class="rotulos-footer" title="Enoturismo" href="enoturismo.html">Enoturismo</a><br>
+      </div>
+      <div class="bloco2-footer">
+        <a class="rotulos-footer" title="Acessar sua Conta" href="login.html">Acessar sua Conta</a><br>
+        <a class="rotulos-footer" title="Cadastro" href="cadastro.html">Cadastro</a><br>
+        <a class="rotulos-footer" title="Política de Privacidade" href="loren.html">Política de Privacidade</a><br>
+        <a class="rotulos-footer" title="Termos de Uso" href="loren.html">Termos de Uso</a><br>
+        <a class="rotulos-footer" title="Central de Ajuda" href="loren.html">Central de Ajuda</a><br>        
+      </div>
+      <div class="bloco3-footer">
+              <a class="rotulos-footer" title="Quem Somos" href="quemsomos.html">Quem Somos</a><br>
+              <a class="rotulos-footer" title="Ofertas" href="ofertas.html">Receba nossas ofertas</a><br>
+      </div>
+      <div class="bloco4-footer">
+          <div class="contato">
+              <a title="Facebook" href="vinhos.html"><img src="img/facebook.png" alt="Facebook" srcset=""></a>
+              <a title="Instagram" href="kitsdevinhos.html"><img src="img/instagram.png" alt="Instagram" srcset=""></a>
+              <a title="E-mail" href="mailto:contato@levin.com.br"><img src="img/email.png" alt="E-mail" srcset=""></a>
+              <a title="WhatsApp" href="sommelier.html"><img src="img/whatsapp.png" alt="WhatsApp" srcset=""></a>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>
