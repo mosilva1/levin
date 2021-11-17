@@ -1,7 +1,7 @@
 .conteudo{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 650px;
+    grid-template-rows: 600px;
 }
 .card{
     display: inline-grid;
@@ -53,13 +53,11 @@
     color: var(--primary);
 }
 .card3{
-    display: grid;
-    grid-template-columns: 100px auto 100px;
     box-shadow: 5px 5px 5px #b3b3b3;
     background-color: var(--white);
     border-radius: 10px;
-    width: 89%;
-    margin: 0 30px 0 0;
+    width: 80%;
+    margin: 20px 30px 0 0;
     padding: 20px;
 }
 .conteudo2 h1{
@@ -71,40 +69,36 @@
     margin-bottom: 20px;
 }
 .parceria{
-    grid-column: 1/2;
     display: grid;
-    grid-template-columns: 50% 30% 20%;
-    grid-template-rows: 91px;
-    width: 90%;
+    grid-template-columns: 150px 350px;
+    width: 100%;
     border-bottom: 1px solid var(--dark-gray);
-    margin-bottom: 10px;
-}
-.parceria h5{
-    margin: 0;
+    
 }
 .subparceria{
-    margin-right: 82%;
-    text-align: center;
-}
-.parceria img{
     grid-column: 1/2;
-    height: 70px;
-    width: 170px;
-    padding: 5px;
-}
-.title-parceiro{
-    grid-column: 2/3;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .compra{
-    grid-column: 3/4;
-    text-align: right;
+    display: grid;
+    grid-template-columns: 200px 150px;
+    align-items: center;
+}
+.compra h5{
+    grid-column: 1/2;
+    text-align: center;
+}
+.compra_modal{
+    grid-column: 2/3;
+    text-align: center;
 }
 .h5{
     font-family: "Roboto-Medium" sans-serif;
     font-size: 20px;
     color: var(--primary);
-    text-align: right;
-    margin-right: 5px;
+    text-align: center;
 }
 .compra_button{
     background-color: var(--primary);
@@ -292,14 +286,15 @@ body {
 * Lista de Comentarios
 =======================*/
 .comments-container {
-   margin: 60px auto 15px;
-   width: 768px;
+   margin: 40px auto 40px;
+   width: 800px;
 }
 
 .comments-container h1 {
    font-size: 36px;
    color: #283035;
    font-weight: 400;
+   text-align: center;
 }
 
 .comments-container h1 a {
