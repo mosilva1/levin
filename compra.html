@@ -7,7 +7,8 @@
     <title>levin</title>
     <link rel="stylesheet" href="css/levin.css">
     <link rel="stylesheet" href="css/compra.css">
-    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
@@ -44,16 +45,35 @@
                     </div>
                     <div class="card2">
                         <h2>Enzo Bianchi</h2>
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                        <br>
                         <h3>SAFRA</h3>
                         <p>2017</p>
+                        <br>
                         <h3>ESTILO</h3>
                         <p>Bordeaux Blend Argentino</p>
+                        <br>
                         <h3>UVA</h3>
                         <p>Cabernet Sauvignon | Malbec</p>
+                        <br>
                         <h3>REGIÃO</h3>
                         <p>Argentina | Mendoza | San Rafael</p>
+                        <br>
                         <h3>HARMONIZAÇÃO</h3>
                         <p>Carne bovina | Massas | Cordeiro | Aves</p>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -65,12 +85,12 @@
                     <div class="parceria">
                         <div class="subparceria">
                             <div>
-                                <img src="img/parceiras/divvino.png" alt="logo">
+                                <a class="h5" href="https://www.divvino.com.br/"><h5>DIVVINO</h5></a>
                             </div>
                         </div>
                         <div class="compra" >
-                            <h5>R$ 233,10</h5>
-                            <button class="compra_button" type="button" id="open-modal">COMPRAR</button>
+                            <h5 class="h5">R$ 233,10</h5>
+                            <button class="compra_button" type="button" id="open-modal" onclick="AbreModal('modal-1')">COMPRAR</button>
                                 <!-- New event modal -->
                                 <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
                                     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -87,7 +107,10 @@
                                                 <button class="modal__btn modal__btn-primary">Continue</button>
                                                 <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Fechar</button>
                                             </div>
-                                            
+                                            <script>
+                                                
+                                    
+                                            </script>
                                         </div>
                                     </div>
                                 </div>
@@ -97,14 +120,46 @@
                     <div class="parceria">
                         <div class="subparceria">
                             <div>
-                                <img src="img/parceiras/evino.png" alt="logo">
+                                <a class="h5" href="https://www.evino.com.br/"><h5>EVINO</h5></a>
                             </div>
                         </div>
                         <div class="compra" >
-                            <h5>R$ 519,90</h5>
-                            <button class="compra_button" type="button" id="open-modal">COMPRAR</button>
+                            <h5 class="h5">R$ 519,90</h5>
+                            <button class="compra_button" type="button" id="open-modal-2" onclick="AbreModal('modal-2')">COMPRAR</button>
                                 <!-- New event modal -->
-                                <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                                <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+                                    <div class="modal__overlay" tabindex="-2" data-micromodal-close>
+                                        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+                                            <div class="modal__header">
+                                                <h2 class="modal__title" id="modal-2-title">AVISO</h2>
+                                                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                                            </div>
+                                            <div class="modal__content" id="modal-2-content">
+                                                <h2 class="modal__title" id="modal-2-title">Você está sendo direcionado para outro site, para realizar a sua compra.</h2>
+                                                <p class="modal__aviso" >O site parceiro contém políticas de privacidade diferentes do Levin. Verifique-as antes de realizar sua compra.</p>
+                                            </div>
+                                            <div class="modal__footer">
+                                                <button class="modal__btn modal__btn-primary">Continue</button>
+                                                <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Fechar</button>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+                    <div class="parceria">
+                        <div class="subparceria">
+                            <div>
+                                <a class="h5" href="https://www.wine.com.br/"><h5>WINE</h5></a>
+                            </div>
+                        </div>
+                        <div class="compra" >
+                            <h5 class="h5">R$ 419,90</h5>
+                            <button class="compra_button" type="button" id="open-modal" onclick="AbreModal('modal-3')">COMPRAR</button>
+                                <!-- New event modal -->
+                                <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
                                     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
                                         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                                             <div class="modal__header">
@@ -128,14 +183,14 @@
                     <div class="parceria">
                         <div class="subparceria">
                             <div>
-                                <img src="img/parceiras/Logo-Wine.jpg" alt="logo">
+                                <a class="h5" href="https://www.vinhofacil.com.br/"><h5>VINHO FÁCIL</h5></a>
                             </div>
                         </div>
                         <div class="compra" >
-                            <h5>R$ 419,90</h5>
-                            <button class="compra_button" type="button" id="open-modal">COMPRAR</button>
+                            <h5 class="h5">R$ 329,90</h5>
+                            <button class="compra_button" type="button" id="open-modal" onclick="AbreModal('modal-4')">COMPRAR</button>
                                 <!-- New event modal -->
-                                <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                                <div class="modal micromodal-slide" id="modal-4" aria-hidden="true">
                                     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
                                         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                                             <div class="modal__header">
@@ -159,45 +214,15 @@
                     <div class="parceria">
                         <div class="subparceria">
                             <div>
-                                <img src="img/parceiras/vinho-fácil-descontos.png" alt="logo">
+                                <a class="h5" href="https://www.vivino.com/BR/pt/"><h5>VIVINO</h5></a>
                             </div>
                         </div>
-                        <div class="compra" >
-                            <h5>R$ 329,90</h5>
-                            <button class="compra_button" type="button" id="open-modal">COMPRAR</button>
-                                <!-- New event modal -->
-                                <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-                                    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-                                        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                                            <div class="modal__header">
-                                                <h2 class="modal__title" id="modal-1-title">AVISO</h2>
-                                                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-                                            </div>
-                                            <div class="modal__content" id="modal-1-content">
-                                                <h2 class="modal__title" id="modal-1-title">Você está sendo direcionado para outro site, para realizar a sua compra.</h2>
-                                                <p class="modal__aviso" >O site parceiro contém políticas de privacidade diferentes do Levin. Verifique-as antes de realizar sua compra.</p>
-                                            </div>
-                                            <div class="modal__footer">
-                                                <button class="modal__btn modal__btn-primary">Continue</button>
-                                                <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                        </div>
-                    </div>
-                    <div class="parceria">
-                        <div class="subparceria">
-                            <div>
-                                <img src="img/parceiras/vivino-logo-vector.png" alt="logo">
-                            </div>
-                        </div>
                         <div class="compra" >
-                            <h5>R$ 560,00</h5>
-                            <button class="compra_button" type="button" id="open-modal">COMPRAR</button>
+                            <h5 class="h5">R$ 560,00</h5>
+                            <button class="compra_button" type="button" id="open-modal" onclick="AbreModal('modal-5')" >COMPRAR</button>
                                 <!-- New event modal -->
-                                <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                                <div class="modal micromodal-slide" id="modal-5" aria-hidden="true">
                                     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
                                         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                                             <div class="modal__header">
@@ -221,15 +246,50 @@
                 </div>
             </div>
         </div>
-        <script>
-            let openButton = document.getElementById('open-modal');
+        <!-- Contenedor Principal -->
+	<div class="comments-container">
+		<h1>Comentários</h1>
+		<ul id="comments-list" class="comments-list">
+			<li>
+				<div class="comment-main-level">
+					<!-- Avatar -->
+					<div class="comment-avatar"><img src="https://st2.depositphotos.com/1028735/10540/v/600/depositphotos_105404026-stock-illustration-mexican-woman-imagination-isolated-on.jpg" alt=""></div>
+					<!-- Contenedor del Comentario -->
+					<div class="comment-box">
+						<div class="comment-head">
+							<h6 class="comment-name by-author">Frida kahlo</h6>
+							<span>há 20 minutos</span>
+							<i class="fa fa-reply"></i>
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="comment-content">
+							Maravilhoso esse vinho, recomendo demais. Merece 5 estrelas mesmo!!!
+						</div>
+					</div>
+				</div>
+				<!-- Respuestas de los comentarios -->
+				<ul class="comments-list reply-list">
+					<li>
+						<!-- Avatar -->
+						<div class="comment-avatar"><img src="img/icone-levin.svg" alt=""></div>
+						<!-- Contenedor del Comentario -->
+						<div class="comment-box">
+							<div class="comment-head">
+								<h6 class="comment-name"><a href="levin.html">LEVIN</a></h6>
+								<span>há 10 minutos</span>
+								<i class="fa fa-reply"></i>
+								<i class="fa fa-heart"></i>
+							</div>
+							<div class="comment-content">
+								Frida Kahlo, obrigado pela sua opinião, ela é muito importante para nós.
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
 
-                openButton.addEventListener('click', function() {
-                MicroModal.show('modal-1');
-                
-                });
-
-        </script>
+		</ul>
+	</div>
     </main>
     <footer class="conteiner3">
         <a href="#"><img class="logo-footer" src="img/logo2.svg" alt="" srcset=""></a>
@@ -260,5 +320,14 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script>
+        function AbreModal(nomeModal){
+            let openButton = document.getElementById(nomeModal);
+                  //alert(nomeModal);                  
+                  MicroModal.show(nomeModal);
+            
+        }
+    </script>
 </body>
 </html>

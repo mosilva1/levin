@@ -99,7 +99,7 @@
 }
 .overlay {
 	background-color: var(--primary);
-    background: url(/img/conteudo/image.jpg);
+    background: url(/img/conteudo/login.png);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
