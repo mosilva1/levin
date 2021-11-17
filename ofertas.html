@@ -6,14 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>levin</title>
     <link rel="stylesheet" href="css/levin.css">
-    <link rel="stylesheet" href="css/quemsomos.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-   <script> src="js/quemsomos.js" </script>
+    <link rel="stylesheet" href="ofertas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
@@ -39,46 +33,16 @@
         </div>
     </header>
     <main>
-        <div class="grade" >
-            <div class="texto" >
-                <h1>Quem Somos?</h1><br>
-                <p>O levin foi criado para quem vive do vinho e para quem não vive sem ele.</p><br>
-                <p>Buscamos oferecer vários caminhos para que você encontre os melhores vinhos, e também dicas para degustação, harmonização e o turismo.</p>
-            </div>
-            <div class="texto2" >
-                <h1>Onde Estamos?</h1><br>
-                <p>Av. Dr. Flávio Henrique Lemos, 585 - Portal Itamaracá</p>
-                <p>Taquaritinga - SP | CEP 15906-522</p>
-        
-            </div>
-            <div class="map-poisition" >
-                <div id="map"></div> 
-                <script>// Initialize the map and assign it to a variable for later use
-                    // there's a few ways to declare a VARIABLE in javascript.
-                    // you might also see people declaring variables using `const` and `let`
-                    var map = L.map('map', {
-                        // Set latitude and longitude of the map center (required)
-                        center: [-21.430106, -48.515308],
-                        // Set the initial zoom level, values 0-18, where 0 is most zoomed-out (required)
-                        zoom: 10
-                    });
-                    
-                    // Create a Tile Layer and add it to the map
-                    var tiles = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                      minZoom: '15'}).addTo(map);
-                    
-                    var marker = L.marker(
-                      [-21.430106, -48.515308],
-                      { 
-                        draggable: true,
-                        title: "",
-                        opacity: 0.75
-                    });
-                    
-                    marker.addTo(map).bindPopup("<p1><b>Levin</p1>") .openPopup();
-                </script>
-            </div>
+        <div class="conteiner2">
+            <form action="">
+              <h1>Join Our Newsletter</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <div class="email-box">
+                <i class="fas fa-envelope"></i>
+                <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
+                <button class="btn" type="button" name="button">Subscribe</button>
+              </div>
+            </form>
         </div>
     </main>
     <footer class="conteiner3">

@@ -7,7 +7,7 @@
     <title>levin</title>
     <link rel="stylesheet" href="css/levin.css">
     <link rel="stylesheet" href="css/sommelier.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
@@ -43,8 +43,7 @@
            
             <div class="conteiner-destaque">
                 <div class="destaque1">
-                    <a href="img/conteudo/vinhotaca.jpg" class="glightbox3" data-gallery="gallery1">
-                        <img class="destaque-img" src="img/conteudo/vinhotaca.jpg" alt="image" />
+                    <a class="image-link" href="img/conteudo/vinhotaca.jpg"><img class="destaque-img" src="img/conteudo/vinhotaca.jpg" alt="image" />
                     </a>
                     <h2>Para cada vinho, uma taça</h2>
                     <div class="materia">    
@@ -53,8 +52,7 @@
                     </div>
                 </div>
                 <div class="destaque2">
-                    <a href="img/conteudo/redchamaleon.jpg" class="glightbox3" data-gallery="gallery1">
-                        <img class="destaque-img" src="img/conteudo/redchamaleon.jpg" alt="image" />
+                    <a class="image-link" href="img/conteudo/redchamaleon.jpg"><img class="destaque-img" src="img/conteudo/redchamaleon.jpg" alt="image" />
                     </a>  
                     <h2>Como conservar o vinho em casa</h2>
                     <div class="materia">    
@@ -63,8 +61,7 @@
                     </div>
                 </div>
                 <div class="destaque3">
-                    <a href="img/conteudo/marieclaire.jpg" class="glightbox3" data-gallery="gallery1">
-                        <img class="destaque-img" src="img/conteudo/marieclaire.jpg" alt="image" />
+                    <a class="image-link" href="img/conteudo/marieclaire.jpg"><img class="destaque-img" src="img/conteudo/marieclaire.jpg" alt="image" />
                     </a> 
                     <h2>Vinho Rosé e torta de chocolate</h2>
                     <div class="materia">    
@@ -79,7 +76,8 @@
             <div class="box-botton">
                 <div class="conteiner-destaque2">
                     <div class="destaque1">
-                        <img class="destaque-img" src="img/conteudo/vinho aberto.jpg" alt=" ">  
+                        <a class="image-link" href="img/conteudo/vinho aberto.jpg"><img class="destaque-img" src="img/conteudo/vinho aberto.jpg" alt=" ">
+                        </a>
                         <h2>Acessórios para conservar o vinho</h2>
                         <div class="materia">    
                             <p>Uma das dúvidas mais frequentes dos apreciadores de vinhos é sobre o quanto tempo depois de aberto um vinho continua bom para beber. Bom, tudo isso depende, é claro, da forma como ele será conservado.</p>
@@ -87,7 +85,8 @@
                         </div>
                     </div>
                     <div class="destaque2">
-                        <img class="destaque-img" src="img/conteudo/corta-gotas.jpg" alt="">  
+                        <a class="image-link" href="img/conteudo/corta-gotas.jpg"><img class="destaque-img" src="img/conteudo/corta-gotas.jpg" alt="">
+                        </a>        
                         <h2>Para que serve um corta-gotas?</h2>
                         <div class="materia">    
                             <p>Além de encontrar os mais variados tipos de vinhos, também é possível achar uma infinidade de utensílios que estão relacionados com a bebida, especialmente aqueles que têm como objetivo facilitar a sua degustação.</p>
@@ -95,7 +94,8 @@
                         </div>
                     </div>
                     <div class="destaque3">
-                        <img class="destaque-img" src="img/conteudo/caderneta.jpg" alt=" ">  
+                        <a class="image-link" href="img/conteudo/caderneta.jpg"><img class="destaque-img" src="img/conteudo/caderneta.jpg" alt=" ">
+                        </a>
                         <h2>Caderneta do Vinho</h2>
                         <div class="materia">    
                             <p>Abrir um vinho e analisar suas características é um momento de concentração e até mesmo de prazer. Para algumas pessoas abrir um vinho é um hobby ou está relacionado aos estudos para certificação.</p>
@@ -120,7 +120,7 @@
         </div>
         <div class="bloco2-footer">
             <a class="rotulos-footer" title="Acessar sua Conta" href="login.html">Acessar sua Conta</a><br>
-            <a class="rotulos-footer" title="Cadastro" href="cadastro.html">Cadastro</a><br>
+            <a class="rotulos-footer" title="Cadastro" href="login.html">Cadastro</a><br>
             <a class="rotulos-footer" title="Política de Privacidade" href="loren.html">Política de Privacidade</a><br>
             <a class="rotulos-footer" title="Termos de Uso" href="loren.html">Termos de Uso</a><br>
             <a class="rotulos-footer" title="Central de Ajuda" href="loren.html">Central de Ajuda</a><br>        
@@ -138,10 +138,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script type="text/javascript">
-        const lightbox = GLightbox3({ ...options });
-        lightbox.open();
-    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/magnific-popup.js" ></script>
+    <script src="js/image.js" ></script>
 </body>
 </html>

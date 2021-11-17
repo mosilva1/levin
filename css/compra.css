@@ -98,7 +98,7 @@
     font-family: "Roboto-Medium" sans-serif;
     font-size: 20px;
     color: var(--primary);
-    text-align: center;
+    text-align: justify;
 }
 .compra_button{
     background-color: var(--primary);
