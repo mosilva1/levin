@@ -522,19 +522,16 @@ body {
    }
 }
 
-
-
-
 .estrelas input[type=radio] {
     display: none;
-  }
+}
   .estrelas label i.fa{
     font-size: 30px;
-  }
+}
   .estrelas label i.fa:before {
     content:'\f005';
     color: #eacd3b;
-  }
+}
   .estrelas input[type=radio]:checked ~ label i.fa:before {
     color: #CCC;
-  }
+}
