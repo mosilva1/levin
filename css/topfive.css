@@ -8,15 +8,15 @@ h2, h3{
   color: var(--primary);
 }
 .top p{
-  font-family: "Roboto-Medium" sans-serif;
+  font-family: "Roboto-Medium", sans-serif;
   color: var(--dark-gray);
 }
 .content span{
-  font-family: "Roboto-Medium" sans-serif;
+  font-family: "Roboto-Medium", sans-serif;
   color: var(--dark-gray);
 }
 .content p{
-  font-family: "Roboto-Medium" sans-serif;
+  font-family: "Roboto-Medium", sans-serif;
   color: var(--primary);
 }
 ol img {

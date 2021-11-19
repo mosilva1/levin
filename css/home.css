@@ -13,7 +13,7 @@ height: 40px;
 padding: 10px;
 }
 .titulo-search h2{
-font-family: "Roboto-Medium" sans-serif;
+font-family: "Roboto-Medium", sans-serif;
 color: var(--light-gray);
 font-size: 25px;
 padding: 0 5px;

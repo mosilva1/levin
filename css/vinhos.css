@@ -17,12 +17,12 @@
     padding: 0 0 0 20px;
 }
 .tipos h2{
-    font-family: "Robot-Medium" sans-serif;
+    font-family: "Robot-Medium", sans-serif;
     color: var(--primary);
     font-size: 20px;
 }
 .preco h2{
-    font-family: "Robot-Medium" sans-serif;
+    font-family: "Robot-Medium", sans-serif;
     color: var(--primary);
     font-size: 20px;
 }
@@ -169,14 +169,14 @@
     font-size: 10px;
 }
 .valor h4{
-    font-family: "Robot-Medium" sans-serif;
+    font-family: "Robot-Medium", sans-serif;
     color: var(--primary);
     font-size: 20px;
     margin: 0;
     width: 100px;
 }
 .vinhos h2{
-    font-family: "Robot-Medium" sans-serif;
+    font-family: "Robot-Medium", sans-serif;
     color: var(--primary);
     font-size: 20px;
 }
