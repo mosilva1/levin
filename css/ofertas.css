@@ -1,14 +1,17 @@
 .conteiner2{
-  background: url(/img/conteudo/vinho1.jpg) no-repeat center;
+  background: url(../img/conteudo/videira-fundo.jpg) no-repeat center;
   background-size: cover;
-  padding: 100px 40px;
+  padding: 130px 40px;
   text-align: center;
-  color: white;
+  color: var(--white);
+}
+h1{
+  color: var(--white);
 }
 .conteiner2 p {
   max-width: 600px;
   margin: 40px auto;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
 }
 .email-box{
@@ -17,9 +20,10 @@
   display: flex; /*its better to use inline-flex*/
 }
 .email-box i{
-  background: #2f3542;
+  background: var(--primary);
   width: 40px;
   line-height: 40px;
+  border-radius: 10px 0 0 10px;
 }
 .tbox,.btn{
   border: none;
@@ -30,13 +34,15 @@
   transition: 0.6s;
 }
 .email-box:hover > .tbox,.tbox:focus{
-  width: 260px;
-  padding: 0 10px;
+  width: 250px;
+  padding: 0 15px;
 }
 .btn{
-  background: #2f3542;
-  color: white;
+  background: var(--primary);
+  color: var(--white);
   padding: 0 10px;
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 0 10px 10px 0;
 }
+
